@@ -11,8 +11,8 @@ def countWithSigma(val, arr):
     return [val, sigma]
 
 def texAns(val):
-    if len(val) == 1:
-        return "%g" % (val[0])
+    if len(val) == 1 or val[1] == 0:
+        return r"$%g$" % (val[0])
 
     inacc = abs(val[1])
     precision = 0
